@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/.../normalize.css">
+    <link rel="stylesheet" href="pelicula.css">
+    <link rel="stylesheet" href="pelicula_tamanio_tablet.css">
+    <title>Document</title>
+</head>
+
+
+
+<body>
+    <header class="header">
+        <div class="headerDiv">
+            <h1 class="logo">
+                <a href="../pantalla de inicio/stelarium-index.html" class="linkTitulo">STELARIUM</a>
+            </h1>
+        </div>
+        <nav class="navegador">
+            <ul class="nav-links">
+                <li><a class="menu" href="../pantalla de inicio/stelarium-index.html">CARTELERA</a></li>
+                <li><a class="menu" href="../faq/faq.html">FAQ</a></li>
+                <li><a class="menu" href="../promocions/promociones.html">PROMOCIONES</a></li>
+                <li><a class="menu" href="../inicio de sesion/inicio-sesion.html">CUENTA</a></li>
+                <li><a class="menu" href="../candy/candy.html">CANDY BAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section-pelicula">  <!--contiene todo lo que no es header ni footer-->
+        <div class="pelicula-container">   <!-- lo mismo pero lo use para el diseño en css -->
+            <article class="sinopsis"> <!-- contiene el titulo, sinopsis, trailer y eventualmente boton para sacar entradas-->
+                <h2 class="sinopsis-titulo">Blue Beetle</h2>
+                
+                <ul class="info">  <!-- /*toda la lista es la barrita que dice 127min, SAM 13, accion. lo copie (al css tambien) de la pagina del showcase*/-->
+                    <li>
+                        <div class="tiempo">127 minutos.</div>
+                    </li>
+                   
+                    <li>
+                        <div class="rating-edad">SAM 13 <b>USA</b></div>
+                    </li>
+                   
+                    <li>
+                        <div class="genero">Acción</div>
+                    </li>
+                </ul>
+
+                <p class="sinopsis-parrafo">
+                    Jaime Reyes, recién graduado de la universidad, regresa a casa lleno de aspiraciones para su futuro, 
+                    solo para descubrir que la casa no es exactamente como la dejó. 
+                    Mientras busca encontrar su propósito en el mundo, el destino interviene cuando Jaime inesperadamente 
+                    se encuentra en posesión de una antigua reliquia de biotecnología alienígena: el Escarabajo. 
+                    Cuando el Escarabajo de repente elige a Jaime como su anfitrión simbiótico, 
+                    se le otorga una increíble armadura con poderes extraordinarios e impredecibles, 
+                    cambiando para siempre su destino cuando se convierte en el superhéroe BLUE BEETLE.
+                </p>
+                <div class="boton-y-trailer-container"> <!--para tamaño movil-->
+                    <div class="boton-entradas-container">
+                        <button boton><a href="../entradas/entradas.html">COMPRAR ENTRADAS</a></button>
+                    </div>
+                    <div class="trailer-container">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/-PEODBVHCgU?si=cOXNzNhuIoXiLxVZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </article>
+            
+            <aside class="aside-pelicula">  <!--contiene el poster y una lista con datos abajo -->
+                    <img src="../imagenes/blue-poster.jpg" alt="Blue Beetle Poster" class="poster">
+                <ul class="datos-pelicula">
+                    <li><b>Título Original:</b> BLUE BEETLE</li>
+                    <li><b>Orígen:</b> USA</li>
+                    <li><b>Género:</b> Acción</li>
+                    <li><b>Director:</b> Angel Manuel Soto</li>
+                    <li><b>Actores:</b> Xolo Maridueña, Adriana Barraza, Damían Alcázar, 
+                        Elpidia Carrillo, Bruna Marquezine, 
+                        Raoul Max Trujillo, Susan Sarandon, George Lopez, 
+                        Belissa Escobedo y Harvey Guillén.
+                    </li>
+                    <li><b>Calificación:</b> SAM 13</li>
+                    <li><b>Duración:</b> 127 minutos</li>
+                    <li><b>Distribuidora:</b> Warner Bros</li>
+                
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="contactanos-container">
+             <h6>Contactanos:</h6>
+             <ul class="listaFooter">
+                 <li class="elementoLstFooter">
+                     <p>Twitter: <a href="https://twitter.com" target="_blank">@StelariumCinema</a></p>
+                 </li>
+                 <li class="elementoLstFooter">
+                     <p>Instagram: <a href="https://instagram.com" target="_blank">@StelariumCinema</a></p>
+                 </li>
+                 <li class="elementoLstFooter">
+                     <p>Facebook: <a href="https://facebook.com" target="_blank">Stelarium Cinema</a></p>
+                 </li>
+             </ul>
+        </div>
+     </footer>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/.../normalize.css">
+    <link rel="stylesheet" href="pelicula.css">
+    <link rel="stylesheet" href="pelicula_tamanio_tablet.css">
+    <title>Stelarium</title>
+</head>
+
+
+
+<body>
+    <header class="header">
+        <div class="headerDiv">
+            <h1 class="logo">
+                <a href="../pantalla de inicio/stelarium-index.html" class="linkTitulo">STELARIUM</a>
+            </h1>
+        </div>
+        <nav class="navegador">
+            <ul class="nav-links">
+                <li><a class="menu" href="../pantalla de inicio/stelarium-index.html">CARTELERA</a></li>
+                <li><a class="menu" href="../faq/faq.html">FAQ</a></li>
+                <li><a class="menu" href="../promocions/promociones.html">PROMOCIONES</a></li>
+                <li><a class="menu" href="../inicio de sesion/inicio-sesion.html">CUENTA</a></li>
+                <li><a class="menu" href="../candy/candy.html">CANDY BAR</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="section-pelicula">  <!--contiene todo lo que no es header ni footer-->
+        <div class="pelicula-container">   <!-- lo mismo pero lo use para el diseño en css -->
+            <article class="sinopsis"> <!-- contiene el titulo, sinopsis, trailer y eventualmente boton para sacar entradas-->
+                <h2 class="sinopsis-titulo">A traves del spiderverso</h2>
+                
+                <ul class="info">  <!-- /*toda la lista es la barrita que dice 127min, SAM 13, accion. lo copie (al css tambien) de la pagina del showcase*/-->
+                    <li>
+                        <div class="tiempo">140 minutos.</div>
+                    </li>
+                   
+                    <li>
+                        <div class="rating-edad">SAM 13 <b>USA</b></div>
+                    </li>
+                   
+                    <li>
+                        <div class="genero">Acción</div>
+                    </li>
+                </ul>
+
+                <p class="sinopsis-parrafo">
+                    Miles se reúne con versiones alternativas de Spider-Man, incluyendo a un Peter Parker más experimentado y a Spider-Gwen, y juntos deben descubrir cómo detener al villano antes de que destruya no solo sus propios mundos, sino todos los universos posibles. A medida que navegan por estas dimensiones, los héroes arácnidos se enfrentan a desafíos únicos, se descubren a sí mismos y forjan alianzas inquebrantables, todo mientras luchan contra el tiempo para salvar la existencia tal como la conocen.
+                </p>
+
+                <div class="boton-y-trailer-container"> <!--para tamaño movil-->
+                    <div class="boton-entradas-container">
+                        <button boton><a href="../entradas/entradas.html">COMPRAR ENTRADAS</a></button>
+                    </div>
+                    <div class="trailer-container">
+                        <iframe class="trailer" src="https://www.youtube.com/embed/-PEODBVHCgU?si=cOXNzNhuIoXiLxVZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                
+            </article>
+            
+            <aside class="aside-pelicula">  <!--contiene el poster y una lista con datos abajo -->
+                
+                <img src="../imagenes/miles.jpg" alt="Spiderverse poster" class="poster">
+                
+                <ul class="datos-pelicula">
+                    <li><b>Título Original:</b>A TRAVES DEL SPIDERVERSO</li>
+                    <li><b>Orígen:</b> USA</li>
+                    <li><b>Género:</b> Accion</li>
+                    <li><b>Director:</b>Joaquim Dos Santos, Justin K. Thompson, 
+                        Kemp Powers</li>
+                    <li><b>Actores:</b>Heillee Steinfield, Oscar Isacc, 
+                        Shameik Moore, Karan Soni, 
+                        Daniel Kaluuya, Jason Schwartzman 
+                    </li>
+                    <li><b>Calificación:</b>SAM 13</li>
+                    <li><b>Duración:</b> 140 minutos</li>
+                    <li><b>Distribuidora:</b>Sony Pictures Realising</li>
+                
+                </ul>
+            </aside>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="contactanos-container">
+             <h6>Contactanos:</h6>
+             <ul class="listaFooter">
+                 <li class="elementoLstFooter">
+                     <p>Twitter: <a href="https://twitter.com" target="_blank">@StelariumCinema</a></p>
+                 </li>
+                 <li class="elementoLstFooter">
+                     <p>Instagram: <a href="https://instagram.com" target="_blank">@StelariumCinema</a></p>
+                 </li>
+                 <li class="elementoLstFooter">
+                     <p>Facebook: <a href="https://facebook.com" target="_blank">Stelarium Cinema</a></p>
+                 </li>
+             </ul>
+        </div>
+     </footer>
+
+</body>
+</html>

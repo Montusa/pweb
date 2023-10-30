@@ -1,0 +1,225 @@
+*{
+    font-family: "Century Gothic";
+    box-sizing: border-box;
+}
+
+.html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1c2c5c;
+    margin: 0;
+    /* transform: translateX(25%); */
+
+}
+
+a{
+    color:#fff; /*podríamos cambiar el color de los links del footer */
+}
+
+a:visited{   /*Elimina el color del link clickeado*/
+    color: #fff; /*Por defecto los textos de links van a quedar blancos.
+                    Si elegimos un color de texto por defecto cambiemos esto así no hay que cambiar cada uno*/
+}
+
+.header{
+    background-color: #1c2c5c;
+    color: #fff;
+    /* display: flex; */ /*comente esto y me dejó acomodar bien el nav*/
+    /* justify-content: space-between; */
+    position: relative;
+}
+
+/* .headerDiv{
+    position:relative;
+} */
+
+.linkTitulo{
+    text-decoration: none;
+}
+
+.logo{
+    color: #fff !important;
+    /* margin: 2.5% 100% 0% 2.5%; */
+    margin: 1% 0% 1% 5%;
+}
+.navegador{
+    background-color: #303a8a;
+    text-align: center;
+    margin: 0% auto 1%;
+    padding: 0.5% 0 0.5% 0;
+}
+
+.nav-container{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links{
+    background-color: #303a8a;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li{
+    background-color: #1c2c5c;
+    display: inline-block; /* Hace que los elementos se muestren en línea horizontalmente */
+    margin-right: 5%; /* Agrega un espacio entre los elementos (ajusta según sea necesario) */
+    padding: .5% 1% .5% 1%;
+    border-radius: 15%;
+    color: #fff; /* Cambia el color del texto (opcional) */
+    text-decoration: none;
+}
+
+.menu {
+    text-decoration: none;
+    color: #fff;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-registro {
+    background-color: #fff;
+    display: flex;
+    flex-flow: row wrap;
+    border-radius: 10px;
+    padding: 2%;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transform: translateY(20%);
+
+}
+.login-registro h2 {
+    text-align: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; /* Establece un ancho máximo para el formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente en la pantalla */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.login-registro label {
+    margin-bottom: 1%;
+    display: block;
+}
+.login-registro input {
+    padding: 2%; /* Cambiado de 10px a 2% */
+    margin-bottom: 2%; /* Cambiado de 10px a 2% */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 2rem; /* Cambiado de 16px a 2rem */
+}
+.login-registro button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 2%; /* Cambiado de 10px a 2% */
+    cursor: pointer;
+}
+.login-registro button a {
+    color: white;
+}
+.login-registro button:hover {
+    background-color: #0056b3;
+}
+.login-registro a {
+    color: black;
+}
+/* Estilos responsive */
+@media (max-width: 768px) {
+    .section {
+      padding: 5%; /* Aumentamos el espacio en dispositivos más pequeños */
+    }
+    .login-registro {
+      max-width: 100%; /* Ancho máximo del 100% en dispositivos más pequeños */
+    }
+    .login-registro h2 {
+        font-size: 1.5rem; /* Ajustar el tamaño de fuente para pantallas pequeñas */
+    }
+
+    .login-registro label {
+        font-size: 1rem; /* Ajustar el tamaño de fuente para pantallas pequeñas */
+    }
+
+    .login-registro input {
+        padding: 2%; /* Ajustar el espaciado para pantallas pequeñas */
+        margin-bottom: 2%; /* Ajustar el espaciado para pantallas pequeñas */
+        font-size: 1.2rem; /* Ajustar el tamaño de fuente para pantallas pequeñas */
+    }
+
+    .login-registro button {
+        font-size: 1.2rem; /* Ajustar el tamaño de fuente para pantallas pequeñas */
+    }
+    form {
+        max-width: 100%; /* El formulario ocupará todo el ancho disponible */
+        margin: 0;
+    }
+}
+
+.footer{
+    /* background-color:#204891; */
+    background-color: #111111;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    height: 5% !important;
+    /* border-top: 0.5em double #111111; */
+    transform: translateY(116%);
+}
+
+.contactanos-container{ /*contenedores de las listas*/
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-right: 1%;
+    background-color:#1c2c5c;
+}
+
+footer div h6{ /*Titulos de las listas*/
+    font-size: 100%;
+    margin-bottom:0%;
+    margin-top: 3%;
+}
+
+.elementoLstFooter p a:hover{ /*cambia a este color al pasar el mouse por encima de un link*/
+    color:black; /*Hay que elegir un color de la paleta*/
+}
+
+.elementoLstFooter p{ /*los <p> de cada <li> de cada lista*/
+    font-size: 90%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0%;
+}
+
+.elementoLstFooter{
+    margin: 1% 0% !important;
+}
+
+.listaFooter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    padding:0%;
+    margin: 5% 0 5% 0;
+}

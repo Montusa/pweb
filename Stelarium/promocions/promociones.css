@@ -1,0 +1,191 @@
+*{
+    font-family: "Century Gothic";
+    box-sizing: border-box;
+}
+
+.html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1c2c5c;
+    margin: 0;
+    /* transform: translateX(25%); */
+
+}
+
+a{
+    color:#fff; /*podríamos cambiar el color de los links del footer */
+}
+
+a:visited{   /*Elimina el color del link clickeado*/
+    color: #fff; /*Por defecto los textos de links van a quedar blancos.
+                    Si elegimos un color de texto por defecto cambiemos esto así no hay que cambiar cada uno*/
+}
+
+
+
+/*######################## HEADER ########################*/
+
+.header{
+    background-color: #1c2c5c;
+    color: #fff;
+    position: relative;
+}
+
+.linkTitulo{
+    text-decoration: none;
+}
+
+.logo{
+    /* font-family:Georgia, 'Times New Roman', Times, serif; */
+    color: #fff !important;
+    margin: 1% 0% 1% 5%;
+}
+
+/*######################## NAV ########################*/
+
+.navegador{
+    background-color: #303a8a;
+    text-align: center;
+    margin: 0% 0 1%;
+    padding: 0.5% 0 0.5% 0;
+}
+
+.nav-links{
+    background-color: #303a8a;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li{
+    background-color: #1c2c5c;
+    display: inline-block;
+    margin: 0.5% 2.5% 0.5% 2.5%;
+    padding: .5% 1% .5% 1%;
+    border-radius: 15%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu {
+    text-decoration: none;
+    color: #fff;
+}
+
+/*######################## SECTION PROMOCIONES ########################*/
+
+.promociones-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    transform: translateY(15%);
+}
+
+  /* Estilo para cada pregunta */
+.promocion {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+  /* Estilo para las respuestas ocultas por defecto */
+.promo-precio {
+    display: none;
+    margin-bottom: 20px;
+}
+
+  /* Estilo para las respuestas cuando se muestran */
+.promo-precio.show {
+    display: block;
+    font-size: 16px;
+    color: black;
+}
+
+
+  /* Estilo para el contenedor de toda la pregunta y respuesta */
+.promocion-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+  /* Estilo para separar las preguntas y respuestas */
+.promocion-item + .promocion-item {
+    margin-top: 10px;
+}
+
+  /* Estilo para el título de la página de FAQ */
+.pagina-titulo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+
+
+/*########################   FOOTER   ########################*/
+
+.footer{
+    /* background-color:#204891; */
+    background-color: #111111;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    height: 5% !important;
+    transform: translateY(200%);
+}
+
+.contactanos-container{ /*contenedores de las listas*/
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 10%;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-right: 1%;
+    background-color:#1c2c5c;
+}
+
+footer div h6{ /*Titulos de las listas*/
+    font-size: 100%;
+    margin-bottom:0%;
+    margin-top: 3%;
+}
+
+.elementoLstFooter p a:hover{ /*cambia a este color al pasar el mouse por encima de un link*/
+    color:black; /*Hay que elegir un color de la paleta*/
+}
+
+.elementoLstFooter p{ /*los <p> de cada <li> de cada lista*/
+    font-size: 90%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0%;
+}
+
+.elementoLstFooter{
+    margin: 1% 0% !important;
+}
+
+.listaFooter{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    padding:0%;
+    margin: 5% 0 5% 0;
+}
+
+@media (max-width: 798px){
+    .footer{
+        max-width: 100%;
+    }
+}

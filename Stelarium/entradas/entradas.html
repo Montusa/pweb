@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/.../normalize.css">
+    <link rel="stylesheet" href="entradas.css">
+    <title>Stelarium</title>
+</head>
+<body>
+    <header class="header">
+        <div class="headerDiv">
+            <h1 class="logo">
+                <a href="stelarium-index.html" class="linkTitulo"></a>STELARIUM</a>
+            </h1>
+        </div>
+        <nav class="navegador">
+            <ul class="nav-links">
+                <li><a class="menu" href="../pantalla de inicio/stelarium-index.html">CARTELERA</a></li>
+                <li><a class="menu" href="../faq/faq.html">FAQ</a></li>
+                <li><a class="menu" href="../promocions/promociones.html">PROMOCIONES</a></li>
+                <li><a class="menu" href="../inicio de sesion/inicio-sesion.html">CUENTA</a></li>
+                <li><a class="menu" href="../candy/candy.html">CANDY BAR</a></li>
+            </ul>
+        </nav>
+
+    <div class="formulario">
+        <h2>Compra de Entradas</h2>
+        <form action="#" method="post">
+            <label for="horario">Horario:</label>
+            <select id="horario" name="horario">
+                <option value="matinee">Matinée (10:00 AM)</option>
+                <option value="tarde">Tarde (3:00 PM)</option>
+                <option value="noche">Noche (8:00 PM)</option>
+            </select>
+
+            <label for="cantidad">Cantidad de Entradas:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" value="1">
+
+            <label for="metodo">Método de Pago:</label>
+            <select id="metodo" name="metodo">
+                <option value="tarjeta">VISA</option>
+                <option value="efectivo">MASTERCARD</option>
+                <option value="efectivo">AMERICAN EXPRESS</option>
+            </select>
+
+            <label for="cupon">Cupón (opcional):</label>
+            <input type="text" id="cupon" name="cupon">
+
+            <div class="asientos-container">
+                <h2>Mapa de Asientos</h2>
+                <div class="asientos">
+                    <div class="asiento disponible">1</div>
+                    <div class="asiento disponible">2</div>
+                    <div class="asiento disponible">3</div>
+                    <div class="asiento disponible">4</div>
+                    <div class="asiento disponible">5</div>
+                    <div class="asiento disponible">6</div>
+                    <div class="asiento disponible">7</div>
+                    <div class="asiento disponible">8</div>
+                    <div class="asiento disponible">9</div>
+                    <div class="asiento disponible">10</div>
+                    <div class="asiento disponible">11</div>
+                    <div class="asiento disponible">12</div>
+                </div>
+            </div>
+            <input type="submit" value="Comprar Entradas">
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="contactanos-container">
+             <h6>Contactanos:</h6>
+             <ul class="listaFooter">
+                 <li class="elementoLstFooter">
+                     <p>Twitter: <a href="https://twitter.com" target="_blank">@StelariumCinema</a></p>
+                 </li>
+                 <li class="elementoLstFooter">
+                     <p>Instagram: <a href="https://instagram.com" target="_blank">@StelariumCinema</a></p>
+                 </li>
+                 <li class="elementoLstFooter">
+                     <p>Facebook: <a href="https://facebook.com" target="_blank">Stelarium Cinema</a></p>
+                 </li>
+             </ul>
+        </div>
+     </footer>
+</body>
+</html>

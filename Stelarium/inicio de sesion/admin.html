@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stelarium</title>
+    <link rel="stylesheet" href="cuenta.css">
+    <script src="formulario.js"></script>
+</head>
+<body>
+    <header>
+        <h1><a href="../pantalla de inicio/stelarium-index.html">STELARIUM</a></h1>
+    </header>
+    
+    <section class="user-info">
+        <h2>Información del Usuario</h2>
+        <p>Nombre: Administrador 1</p>
+        <p>Email: usuario@example.com</p>
+    </section>
+    
+    <section class="purchase-history">
+        <h2>Estado de Compras</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Fecha</th>
+                    <th>Compra</th>
+                    <th>Estado</th>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th>USUARIO 1</th>
+                    <th>21/09/23 19:27</th>
+                    <th>Blue Beetle</th>
+                    <th>
+                        <select name="estado-reserva" id="estado">
+                            <option value="" selected>En proceso</option>
+                            <option value="">Aceptada</option>
+                            <option value="">Finalizada</option>
+                        </select>
+                    </th>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th>USUARIO 2</th>
+                    <th>21/09/23 19:27</th>
+                    <th>Barbie</th>
+                    <th>
+                        <select name="estado-reserva" id="estado">
+                            <option value="" selected>En proceso</option>
+                            <option value="">Aceptada</option>
+                            <option value="">Finalizada</option>
+                        </select>
+                    </th>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th>USUARIO 3</th>
+                    <th>21/09/23 19:27</th>
+                    <th>Asteroid City</th>
+                    <th>
+                        <select name="estado-reserva" id="estado">
+                            <option value="" selected>En proceso</option>
+                            <option value="" selected>Aceptada</option>
+                            <option value="" selected>Finalizada</option>
+                        </select>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section class="points-history">
+        <h2>Canjeos de Promociones</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Fecha</th>
+                    <th>Canje</th>
+                    <th>Estado</th>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th>USUARIO 1</th>
+                    <th>21/09/23 19:27</th>
+                    <th>Promocion 1</th>
+                    <th>
+                        <select name="estado-promocion" id="estado">
+                            <option value="" selected>Canjeada</option>
+                            <option value="">Utilizada</option>
+                        </select>
+                    </th>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th>USUARIO 2</th>
+                    <th>21/09/23 19:27</th>
+                    <th>Promocion 3</th>
+                    <th>
+                        <select name="estado-promocion" id="estado">
+                            <option value="" selected>Canjeada</option>
+                            <option value="">Utilizada</option>
+                        </select>
+                    </th>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th>USUARIO 3</th>
+                    <th>21/09/23 19:27</th>
+                    <th>Promocion 4</th>
+                    <th>
+                        <select name="estado-promocion" id="estado">
+                            <option value="" selected>Canjeada</option>
+                            <option value="">Utilizada</option>
+                        </select>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section class="redeemed-promotions">
+        <h2>Peliculas</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Pelicula</th>
+                    <th>Horarios</th>
+                    <th>Estado</th>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th>Blue Beetle </th>
+                    <th>Lunes 10:00-12:10</th>
+                    <th>
+                        <select name="estado-pelicula" id="estado">
+                            <option value="" selected>Activada</option>
+                            <option value="">Desactivada</option>
+                        </select>
+                    </th>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th>Barbie</th>
+                    <th>Martes 12:00-13:15</th>
+                    <th>
+                        <select name="estado-pelicula" id="estado">
+                            <option value="" selected>Activada</option>
+                            <option value="">Desactivada</option>
+                        </select>
+                    </th>
+                </tr>
+            </tbody>
+            <tbody>
+                <tr>
+                    <th>Asteroid City</th>
+                    <th>Miercoles 12:00-13:15</th>
+                    <th>
+                        <select name="estado-pelicula" id="estado">
+                            <option value="" selected>Activada</option>
+                            <option value="">Desactivada</option>
+                        </select>
+                    </th>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <div class="container-form-peliculas">
+        <button id="agregarpeliculabutton" class="agregar-pelicula-button" onclick="mostrarform()">Agregar Película</button>
+        <section class="agregar-pelicula-form" style="display: none;">
+            <h2>Agregar Película</h2>
+            <form id="movie-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+        
+                <label for="horarios">Horarios:</label>
+                <input type="text" id="horarios" name="horarios" required><br>
+        
+                <label for="reparto">Reparto:</label>
+                <input type="text" id="reparto" name="reparto" required><br>
+        
+                <label for="sinopsis">Sinopsis:</label>
+                <textarea id="sinopsis" name="sinopsis" rows="4" required></textarea><br>
+        
+                <input type="submit" value="Guardar">
+            </form>
+        </section>
+    </div>
+   
+    
+
+
+    <footer class="footer">
+        <div class="contactanos-container">
+        <h6>Contactanos:</h6>
+        <ul class="listaFooter">
+            <li class="elementoLstFooter">
+                <p>Twitter: <a href="https://twitter.com" target="_blank">@StelariumCinema</a></p>
+            </li>
+            <li class="elementoLstFooter">
+                <p>Instagram: <a href="https://instagram.com" target="_blank">@StelariumCinema</a></p>
+            </li>
+            <li class="elementoLstFooter">
+                <p>Facebook: <a href="https://facebook.com" target="_blank">Stelarium Cinema</a></p>
+            </li>
+        </ul>
+    </div>
+    </footer>
+</body>
+</html>

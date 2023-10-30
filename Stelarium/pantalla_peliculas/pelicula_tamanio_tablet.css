@@ -1,0 +1,112 @@
+@media (max-width: 768px) {
+
+
+/*######################## SECTION DE LA PELÍCULA ########################*/
+
+    .section-pelicula { /* section que contiene todo*/
+        display: flex;
+        flex-direction: column-reverse;
+        background-color:#1c2c5c;
+        justify-content: center;
+        color: #fff !important;
+    }
+
+    .pelicula-container{ /* div que contiene todo*/
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 2.5% 7% 0% 7%;
+        border: 5px solid #111111;
+        border-bottom: 0;
+        background-color: #303a8a;
+        justify-content: center;
+        padding: 1%;
+    }
+
+/*######### sinopsis y trailer (article de la izquierda) #########*/
+
+    .sinopsis{
+        color: #111111;
+        display: flex;
+        margin-left: 0;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 3%;
+        color: #fff;
+        justify-content: center !important;   
+    }
+
+    .trailer-container{
+        margin: 0;
+        padding: 1%;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 21em;
+    }
+
+    iframe{
+        height: 100%;
+    }
+
+/* Botón de entradas */
+
+    .boton-entradas-container{
+        width: 100%;
+        height: 10%;
+        margin: 0% 0% 1% 0%;
+        padding: 0% 20% 0% 20%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display: flex;
+        justify-content: center;
+    }
+
+    button[boton] {
+        background-color: #1c2c5c !important;
+        color: #fff;
+        border: none;
+        margin: 0 10% 0 9%;
+        padding: 4% 0;
+        height: 100%;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 100%;
+        cursor: pointer;
+        border-radius: 0.3em;
+    }
+
+    .boton-y-trailer-container{
+        position: relative;
+        margin-top: 80%;
+        margin-bottom: 3%;
+    }
+
+/*######### Poster y datos (aside de la derecha) #########*/
+
+    .aside-pelicula{
+        width: 80%;
+        margin: 0%;
+        margin-left: 1.4%;
+        border: 0.2em solid #111111;
+        padding: 1% 1% 1% 1%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: #1c2c5c;
+        position: absolute;
+    }
+
+    .poster{ /* imagen de la pelicula */
+        width: 52%;
+        margin-right: 0%!important;
+    }
+
+    .datos-pelicula{ /* ul que contiene los datos de la pelicula*/
+        list-style: none;
+        border: 0.18em solid #111111;
+        width: 49%;
+        margin-top: 0;
+        margin-left: 1%;
+    }
+    
+}

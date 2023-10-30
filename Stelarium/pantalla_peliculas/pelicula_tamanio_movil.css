@@ -1,0 +1,7 @@
+@media (max-width: 541px) {
+    .aside-pelicula{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}

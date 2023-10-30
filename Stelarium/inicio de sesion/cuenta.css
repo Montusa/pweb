@@ -1,0 +1,174 @@
+/* Estilo general */
+body {
+    font-family: "Century Gothic";
+    margin: 0;
+    padding: 0;
+    background-color: #303a8a;
+}
+
+/* Encabezado */
+header {
+    background-color: #1c2c5c;
+    color: #fff;
+    text-align: center;
+    padding: 2% 0;
+}
+a:visited{   /*Elimina el color del link clickeado*/
+    color: #fff; /*Por defecto los textos de links van a quedar blancos.
+                    Si elegimos un color de texto por defecto cambiemos esto así no hay que cambiar cada uno*/
+}
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+/* Secciones */
+.section-title {
+    font-size: 1.5em;
+    margin-bottom: 2%;
+}
+
+.user-info, .purchase-history, .points-history, .redeemed-promotions {
+    background-color: #fff;
+    margin: 2% 2%;
+    padding: 2%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabla de historial de compras */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2%;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 1%;
+    text-align: left;
+}
+
+/* Historial de puntos y promociones canjeadas */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 2%;
+}
+
+/* Estilos para el botón "Agregar Películas" */
+.container-form-peliculas{
+    text-align: center;
+}
+.agregar-pelicula-button {
+    background-color: #1c2c5c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.agregar-pelicula-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el formulario "Agregar Película" */
+.agregar-pelicula-form {
+    background-color: #fff;
+    margin: 2% 2%;
+    padding: 2%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.agregar-pelicula-form h2 {
+    font-size: 1.5em;
+    margin-bottom: 2%;
+}
+
+.agregar-pelicula-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.agregar-pelicula-form input[type="text"],
+.agregar-pelicula-form textarea {
+    width: 100%;
+    padding: 1%;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.agregar-pelicula-form input[type="submit"] {
+    background-color: #1c2c5c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.agregar-pelicula-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Pie de página */
+footer {
+    background-color: #111111;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    height: 5%;
+    transform: translateY(100%);
+}
+
+.contactanos-container {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 10%;
+    padding: 1% 2%;
+    margin-right: 1%;
+    background-color: #1c2c5c;
+}
+
+footer div h6 {
+    font-size: 100%;
+    margin-bottom: 0;
+    margin-top: 2%;
+}
+
+.elementoLstFooter p a:hover {
+    color: black;
+}
+
+.elementoLstFooter p {
+    font-size: 90%;
+    padding: 2% 0;
+    margin: 0;
+}
+
+.elementoLstFooter {
+    margin: 1% 0 !important;
+}
+
+.listaFooter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 2% 0;
+}
